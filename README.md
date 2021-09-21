@@ -7,3 +7,4 @@ Kelas : Grafkom A
 
 ### Benda yang saya pilih ialah : **KOIN**
 
+<img src="./koin1.jpg" width=200px title="Tampak Kanan">
