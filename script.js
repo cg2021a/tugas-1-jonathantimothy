@@ -2,11 +2,10 @@ function main() {
     var canvas = document.getElementById("myCanvas");
     var gl = canvas.getContext("webgl");
 
-    // Kotak kiri 
+    // Koin kiri 
     const koinA = {
         colorAtas : [0.820, 0.812, 0.812], 
         colorBawah : [0.540, 0.545, 0.545], 
-
 
         A : [-0.866, -0.37],
         B : [-0.813, -0.33],
@@ -29,9 +28,9 @@ function main() {
         S : [-0.313, -0.61],
         T : [-0.16, -0.55],
         U : [-0.133, -0.5]
-        
     }
 
+    // Koin kanan
     const koinB = { 
         colorAtas : [0.820, 0.812, 0.812], 
         colorBawah : [0.540, 0.545, 0.545], 
@@ -67,7 +66,7 @@ function main() {
 
         ...koinA.N, ...koinA.colorAtas,
         ...koinA.B, ...koinA.colorAtas,
-        ...koinA.M, ...koinA.colorAtas, 
+        ...koinA.M, ...koinA.colorAtas, //30
 
         ...koinA.B, ...koinA.colorAtas,
         ...koinA.M, ...koinA.colorAtas,
@@ -75,7 +74,7 @@ function main() {
 
         ...koinA.C, ...koinA.colorAtas,
         ...koinA.L, ...koinA.colorAtas,
-        ...koinA.M, ...koinA.colorAtas, 
+        ...koinA.M, ...koinA.colorAtas, //60
 
         ...koinA.C, ...koinA.colorAtas,
         ...koinA.D, ...koinA.colorAtas,
@@ -83,7 +82,7 @@ function main() {
         
         ...koinA.D, ...koinA.colorAtas,
         ...koinA.L, ...koinA.colorAtas,
-        ...koinA.K, ...koinA.colorAtas, 
+        ...koinA.K, ...koinA.colorAtas, //90
 
         ...koinA.D, ...koinA.colorAtas,
         ...koinA.E, ...koinA.colorAtas,
@@ -91,7 +90,7 @@ function main() {
 
         ...koinA.K, ...koinA.colorAtas,
         ...koinA.E, ...koinA.colorAtas,
-        ...koinA.J, ...koinA.colorAtas, 
+        ...koinA.J, ...koinA.colorAtas, //120
 
         ...koinA.F, ...koinA.colorAtas,
         ...koinA.E, ...koinA.colorAtas,
@@ -99,7 +98,7 @@ function main() {
 
         ...koinA.F, ...koinA.colorAtas,
         ...koinA.J, ...koinA.colorAtas,
-        ...koinA.I, ...koinA.colorAtas, 
+        ...koinA.I, ...koinA.colorAtas, //150
 
         ...koinA.F, ...koinA.colorAtas,
         ...koinA.I, ...koinA.colorAtas,
@@ -107,7 +106,7 @@ function main() {
 
         ...koinA.G, ...koinA.colorAtas,
         ...koinA.H, ...koinA.colorAtas,
-        ...koinA.I, ...koinA.colorAtas,
+        ...koinA.I, ...koinA.colorAtas, //180
         
 // BAYANGAN
 
@@ -117,7 +116,7 @@ function main() {
 
         ...koinA.O, ...koinA.colorBawah,
         ...koinA.M, ...koinA.colorBawah,
-        ...koinA.P, ...koinA.colorBawah,
+        ...koinA.P, ...koinA.colorBawah, //210
 
         ...koinA.M, ...koinA.colorBawah,
         ...koinA.P, ...koinA.colorBawah,
@@ -125,7 +124,7 @@ function main() {
 
         ...koinA.L, ...koinA.colorBawah,
         ...koinA.P, ...koinA.colorBawah,
-        ...koinA.Q, ...koinA.colorBawah,
+        ...koinA.Q, ...koinA.colorBawah, //240
 
         ...koinA.L, ...koinA.colorBawah,
         ...koinA.Q, ...koinA.colorBawah,
@@ -133,7 +132,7 @@ function main() {
 
         ...koinA.Q, ...koinA.colorBawah,
         ...koinA.K, ...koinA.colorBawah,
-        ...koinA.R, ...koinA.colorBawah,
+        ...koinA.R, ...koinA.colorBawah, //270
 
         ...koinA.K, ...koinA.colorBawah,
         ...koinA.R, ...koinA.colorBawah,
@@ -141,7 +140,7 @@ function main() {
 
         ...koinA.J, ...koinA.colorBawah,
         ...koinA.R, ...koinA.colorBawah,
-        ...koinA.S, ...koinA.colorBawah,
+        ...koinA.S, ...koinA.colorBawah, //300
 
         ...koinA.J, ...koinA.colorBawah,
         ...koinA.S, ...koinA.colorBawah,
@@ -149,7 +148,7 @@ function main() {
 
         ...koinA.S, ...koinA.colorBawah,
         ...koinA.I, ...koinA.colorBawah,
-        ...koinA.T, ...koinA.colorBawah,
+        ...koinA.T, ...koinA.colorBawah, //330
 
         ...koinA.T, ...koinA.colorBawah,
         ...koinA.I, ...koinA.colorBawah,
@@ -157,16 +156,16 @@ function main() {
 
         ...koinA.I, ...koinA.colorBawah,
         ...koinA.U, ...koinA.colorBawah,
-        ...koinA.H, ...koinA.colorBawah,
+        ...koinA.H, ...koinA.colorBawah, //360
 
 // KOIN B 
-        ...koinB.A, ...koinB.colorAtas,
+        ...koinB.A, ...koinB.colorAtas, 
         ...koinB.N, ...koinB.colorAtas,
         ...koinB.B, ...koinB.colorAtas,
 
         ...koinB.N, ...koinB.colorAtas,
         ...koinB.B, ...koinB.colorAtas,
-        ...koinB.M, ...koinB.colorAtas, 
+        ...koinB.M, ...koinB.colorAtas, //390
 
         ...koinB.B, ...koinB.colorAtas,
         ...koinB.M, ...koinB.colorAtas,
@@ -174,7 +173,7 @@ function main() {
 
         ...koinB.C, ...koinB.colorAtas,
         ...koinB.L, ...koinB.colorAtas,
-        ...koinB.M, ...koinB.colorAtas, 
+        ...koinB.M, ...koinB.colorAtas, //420
 
         ...koinB.C, ...koinB.colorAtas,
         ...koinB.D, ...koinB.colorAtas,
@@ -182,7 +181,7 @@ function main() {
         
         ...koinB.D, ...koinB.colorAtas,
         ...koinB.L, ...koinB.colorAtas,
-        ...koinB.K, ...koinB.colorAtas, 
+        ...koinB.K, ...koinB.colorAtas, //450
 
         ...koinB.D, ...koinB.colorAtas,
         ...koinB.E, ...koinB.colorAtas,
@@ -190,7 +189,7 @@ function main() {
 
         ...koinB.K, ...koinB.colorAtas,
         ...koinB.E, ...koinB.colorAtas,
-        ...koinB.J, ...koinB.colorAtas, 
+        ...koinB.J, ...koinB.colorAtas, //480
 
         ...koinB.F, ...koinB.colorAtas,
         ...koinB.E, ...koinB.colorAtas,
@@ -198,7 +197,7 @@ function main() {
 
         ...koinB.F, ...koinB.colorAtas,
         ...koinB.J, ...koinB.colorAtas,
-        ...koinB.I, ...koinB.colorAtas, 
+        ...koinB.I, ...koinB.colorAtas, //510
 
         ...koinB.F, ...koinB.colorAtas,
         ...koinB.I, ...koinB.colorAtas,
@@ -206,7 +205,7 @@ function main() {
 
         ...koinB.G, ...koinB.colorAtas,
         ...koinB.H, ...koinB.colorAtas,
-        ...koinB.I, ...koinB.colorAtas,
+        ...koinB.I, ...koinB.colorAtas, //540
 // BAYANGAN
         ...koinB.N, ...koinB.colorBawah,
         ...koinB.O, ...koinB.colorBawah,
@@ -214,7 +213,7 @@ function main() {
 
         ...koinB.O, ...koinB.colorBawah,
         ...koinB.M, ...koinB.colorBawah,
-        ...koinB.P, ...koinB.colorBawah,
+        ...koinB.P, ...koinB.colorBawah, //570
 
         ...koinB.M, ...koinB.colorBawah,
         ...koinB.P, ...koinB.colorBawah,
@@ -222,7 +221,7 @@ function main() {
 
         ...koinB.L, ...koinB.colorBawah,
         ...koinB.P, ...koinB.colorBawah,
-        ...koinB.Q, ...koinB.colorBawah,
+        ...koinB.Q, ...koinB.colorBawah, //600
 
         ...koinB.L, ...koinB.colorBawah,
         ...koinB.Q, ...koinB.colorBawah,
@@ -238,7 +237,7 @@ function main() {
 
         ...koinB.J, ...koinB.colorBawah,
         ...koinB.R, ...koinB.colorBawah,
-        ...koinB.S, ...koinB.colorBawah,
+        ...koinB.S, ...koinB.colorBawah, //660
 
         ...koinB.J, ...koinB.colorBawah,
         ...koinB.S, ...koinB.colorBawah,
@@ -254,24 +253,8 @@ function main() {
 
         ...koinB.I, ...koinB.colorBawah,
         ...koinB.U, ...koinB.colorBawah,
-        ...koinB.H, ...koinB.colorBawah
+        ...koinB.H, ...koinB.colorBawah //720
     ]
-
-    var vertexBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
-    gl.bindBuffer(gl.ARRAY_BUFFER, null);
-
-    var vertexShaderCode = `
-        attribute vec2 aPosition;
-        attribute vec3 aColor;
-        varying vec3 vColor;
-        uniform float uChange;
-        void main() {
-            gl_Position = vec4(aPosition.x, aPosition.y, 1.0, 1.0);
-            vColor = aColor;
-        }
-    `;
 
     var buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
@@ -308,39 +291,24 @@ function main() {
 
     gl.attachShader(shaderProgram, vertexShader);
     gl.attachShader(shaderProgram, fragmentShader);
-
     gl.linkProgram(shaderProgram);
-
     gl.useProgram(shaderProgram);
 
     var aPosition = gl.getAttribLocation(shaderProgram, "aPosition");
-    gl.vertexAttribPointer(
-        aPosition,
-        2,
-        gl.FLOAT,
-        false,
-        5 * Float32Array.BYTES_PER_ELEMENT,
-        0
-    );
+    gl.vertexAttribPointer(aPosition, 2, gl.FLOAT, false, 5 * Float32Array.BYTES_PER_ELEMENT, 0);
     gl.enableVertexAttribArray(aPosition);
     var aColor = gl.getAttribLocation(shaderProgram, "aColor");
-    gl.vertexAttribPointer(
-        aColor,
-        3,
-        gl.FLOAT,
-        false,
-        5 * Float32Array.BYTES_PER_ELEMENT,
-        2 * Float32Array.BYTES_PER_ELEMENT
-    );
+    gl.vertexAttribPointer(aColor, 3, gl.FLOAT, false, 5 * Float32Array.BYTES_PER_ELEMENT, 2 * Float32Array.BYTES_PER_ELEMENT);
     gl.enableVertexAttribArray(aColor);
 
     var freeze = false;
-    // Interactive graphics with mouse
+
     function onMouseClick(event) {
         freeze = !freeze;
     }
+
     document.addEventListener("click", onMouseClick);
-    // Interactive graphics with keyboard
+
     function onKeydown(event) {
         if (event.keyCode == 32) freeze = true;
     }
@@ -348,6 +316,7 @@ function main() {
     function onKeyup(event) {
         if (event.keyCode == 32) freeze = false;
     }
+
     document.addEventListener("keydown", onKeydown);
     document.addEventListener("keyup", onKeyup);
 
@@ -356,29 +325,45 @@ function main() {
     var uChange = gl.getUniformLocation(shaderProgram, "uChange");
 
     function moveVertices() {
-        if (vertices[1400] < -1.0 || vertices[1500] > 1.0) {
-            speed = speed * -1; 
+        if (vertices[711] > 1.0 || vertices[361] < -1.0) {
+            speed = speed * -1;
         }
-
-        for (let i = 1500; i < vertices.length; i += 5) { 
-            vertices[i] = vertices[i] + speed; 
+        for (let i = 361; i < vertices.length; i += 5) {
+            vertices[i] = vertices[i] + speed;
         }
     }
 
     function render() {
-        moveVertices();
+        if (!freeze) {
+            moveVertices();
+        }
+
         gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+        
         change = change + speed;
+
         gl.uniform1f(uChange, change);
 
         gl.clearColor(0.440, 0.869, 1.0, 1.0); 
         gl.clear(gl.COLOR_BUFFER_BIT);
+
         var primitive = gl.TRIANGLES;
         var offset = 0;
-        var nVertex = 63; 
+        var nVertex = 500;
+
         gl.drawArrays(primitive, offset, nVertex);
+
         requestAnimationFrame(render);
     }
     requestAnimationFrame(render);
 }
+
+
+
+
+
+
+
+
+
