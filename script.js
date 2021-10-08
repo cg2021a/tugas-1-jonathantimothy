@@ -32,29 +32,35 @@ function main() {
         
     }
 
-
     const koinB = { 
         colorAtas : [0.820, 0.812, 0.812], 
         colorBawah : [0.540, 0.545, 0.545], 
-
  
-        A : [0.1, 0.12],
-        B : [0.44, 0.34],
-        C : [0.1, -0.08],
-        D : [0.207, -0.07],
-        E : [0.407, 0.09],
-        F : [0.567, 0.22],
-        G : [0.187, -0.18],
-        H : [0.173, -0.24],
-        I : [0.353, -0.34],
-        J : [0.88, -0.08],
-        K : [0.353, -0.6],
-        L : [0.88, -0.34]
+        A : [0.12, -0.36],
+        B : [0.173, -0.31],
+        C : [0.293, -0.26],
+        D : [0.473, -0.24],
+        E : [0.673, -0.26],
+        F : [0.82, -0.31],
+        G : [0.853, -0.36],
+        H : [0.853, -0.41],
+        I : [0.82, -0.46],
+        J : [0.673, -0.51],
+        K : [0.473, -0.53],
+        L : [0.293, -0.51],
+        M : [0.173, -0.46],
+        N : [0.12, -0.41],
+        O : [0.12, -0.47],
+        P : [0.173, -0.53],
+        Q : [0.293, -0.59],
+        R : [0.473, -0.61],
+        S : [0.673, -0.59],
+        T : [0.82, -0.53],
+        U : [0.853, -0.47]
     }
 
   
     const vertices = [
-
         ...koinA.A, ...koinA.colorAtas,
         ...koinA.N, ...koinA.colorAtas,
         ...koinA.B, ...koinA.colorAtas,
@@ -102,7 +108,9 @@ function main() {
         ...koinA.G, ...koinA.colorAtas,
         ...koinA.H, ...koinA.colorAtas,
         ...koinA.I, ...koinA.colorAtas,
+        
 // BAYANGAN
+
         ...koinA.N, ...koinA.colorBawah,
         ...koinA.O, ...koinA.colorBawah,
         ...koinA.M, ...koinA.colorBawah,
@@ -150,12 +158,103 @@ function main() {
         ...koinA.I, ...koinA.colorBawah,
         ...koinA.U, ...koinA.colorBawah,
         ...koinA.H, ...koinA.colorBawah,
-// KOIN B
 
+// KOIN B 
+        ...koinB.A, ...koinB.colorAtas,
+        ...koinB.N, ...koinB.colorAtas,
+        ...koinB.B, ...koinB.colorAtas,
 
+        ...koinB.N, ...koinB.colorAtas,
+        ...koinB.B, ...koinB.colorAtas,
+        ...koinB.M, ...koinB.colorAtas, 
 
-      
-  
+        ...koinB.B, ...koinB.colorAtas,
+        ...koinB.M, ...koinB.colorAtas,
+        ...koinB.C, ...koinB.colorAtas,
+
+        ...koinB.C, ...koinB.colorAtas,
+        ...koinB.L, ...koinB.colorAtas,
+        ...koinB.M, ...koinB.colorAtas, 
+
+        ...koinB.C, ...koinB.colorAtas,
+        ...koinB.D, ...koinB.colorAtas,
+        ...koinB.L, ...koinB.colorAtas,
+        
+        ...koinB.D, ...koinB.colorAtas,
+        ...koinB.L, ...koinB.colorAtas,
+        ...koinB.K, ...koinB.colorAtas, 
+
+        ...koinB.D, ...koinB.colorAtas,
+        ...koinB.E, ...koinB.colorAtas,
+        ...koinB.K, ...koinB.colorAtas, 
+
+        ...koinB.K, ...koinB.colorAtas,
+        ...koinB.E, ...koinB.colorAtas,
+        ...koinB.J, ...koinB.colorAtas, 
+
+        ...koinB.F, ...koinB.colorAtas,
+        ...koinB.E, ...koinB.colorAtas,
+        ...koinB.J, ...koinB.colorAtas, 
+
+        ...koinB.F, ...koinB.colorAtas,
+        ...koinB.J, ...koinB.colorAtas,
+        ...koinB.I, ...koinB.colorAtas, 
+
+        ...koinB.F, ...koinB.colorAtas,
+        ...koinB.I, ...koinB.colorAtas,
+        ...koinB.G, ...koinB.colorAtas, 
+
+        ...koinB.G, ...koinB.colorAtas,
+        ...koinB.H, ...koinB.colorAtas,
+        ...koinB.I, ...koinB.colorAtas,
+// BAYANGAN
+        ...koinB.N, ...koinB.colorBawah,
+        ...koinB.O, ...koinB.colorBawah,
+        ...koinB.M, ...koinB.colorBawah,
+
+        ...koinB.O, ...koinB.colorBawah,
+        ...koinB.M, ...koinB.colorBawah,
+        ...koinB.P, ...koinB.colorBawah,
+
+        ...koinB.M, ...koinB.colorBawah,
+        ...koinB.P, ...koinB.colorBawah,
+        ...koinB.L, ...koinB.colorBawah,
+
+        ...koinB.L, ...koinB.colorBawah,
+        ...koinB.P, ...koinB.colorBawah,
+        ...koinB.Q, ...koinB.colorBawah,
+
+        ...koinB.L, ...koinB.colorBawah,
+        ...koinB.Q, ...koinB.colorBawah,
+        ...koinB.K, ...koinB.colorBawah,
+
+        ...koinB.Q, ...koinB.colorBawah,
+        ...koinB.K, ...koinB.colorBawah,
+        ...koinB.R, ...koinB.colorBawah,
+
+        ...koinB.K, ...koinB.colorBawah,
+        ...koinB.R, ...koinB.colorBawah,
+        ...koinB.J, ...koinB.colorBawah,
+
+        ...koinB.J, ...koinB.colorBawah,
+        ...koinB.R, ...koinB.colorBawah,
+        ...koinB.S, ...koinB.colorBawah,
+
+        ...koinB.J, ...koinB.colorBawah,
+        ...koinB.S, ...koinB.colorBawah,
+        ...koinB.I, ...koinB.colorBawah,
+
+        ...koinB.S, ...koinB.colorBawah,
+        ...koinB.I, ...koinB.colorBawah,
+        ...koinB.T, ...koinB.colorBawah,
+
+        ...koinB.T, ...koinB.colorBawah,
+        ...koinB.I, ...koinB.colorBawah,
+        ...koinB.U, ...koinB.colorBawah,
+
+        ...koinB.I, ...koinB.colorBawah,
+        ...koinB.U, ...koinB.colorBawah,
+        ...koinB.H, ...koinB.colorBawah
     ]
 
     var vertexBuffer = gl.createBuffer();
@@ -257,11 +356,11 @@ function main() {
     var uChange = gl.getUniformLocation(shaderProgram, "uChange");
 
     function moveVertices() {
-        if (vertices[206] < -1.0 || vertices[176] > 1.0) {
+        if (vertices[1400] < -1.0 || vertices[1500] > 1.0) {
             speed = speed * -1; 
         }
 
-        for (let i = 400; i < vertices.length; i += 5) { 
+        for (let i = 1500; i < vertices.length; i += 5) { 
             vertices[i] = vertices[i] + speed; 
         }
     }
@@ -273,7 +372,7 @@ function main() {
         change = change + speed;
         gl.uniform1f(uChange, change);
 
-        gl.clearColor(0.910, 0.827, 0.555, 1.0); //warna krem
+        gl.clearColor(0.440, 0.869, 1.0, 1.0); 
         gl.clear(gl.COLOR_BUFFER_BIT);
         var primitive = gl.TRIANGLES;
         var offset = 0;
