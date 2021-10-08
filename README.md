@@ -36,3 +36,12 @@ Berikut gambar-gambarnya
   <em>Tampak Belakang</em>
   <br><br>
 </p>
+
+## Hasil Implementasi WebGL
+
+<p align="center">
+  <img src="./img/webgl.jpg" width="600">
+	<br>
+  <em>Hasil Implementasi WebGL</em>
+  <br><br>
+</p>
